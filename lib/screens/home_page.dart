@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_website/utils/colors.dart';
+import 'package:flutter_personal_website/widgets/info_hyperlink.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_personal_website/utils/constants.dart';
 import 'package:flutter_personal_website/utils/size_config.dart';
@@ -13,6 +14,18 @@ class HomePage extends StatelessWidget {
   static const TextStyle titleStyle = TextStyle(fontSize: 16);
   static const TextStyle infoStyle =
       TextStyle(fontSize: 16, fontWeight: FontWeight.bold);
+
+  void _goToAboutMePage() {
+    print('about me');
+  }
+
+  void _goToPortfolioPage() {
+    print('portflio');
+  }
+
+  void _goToBlogPage() {
+    print('blog');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +49,27 @@ class HomePage extends StatelessWidget {
             SizedBox(height: SizeConfig.widgetListHeightPadding),
             const Text(PersonalInfoConstants.myName, style: nameStyle),
             const Text(PersonalInfoConstants.myTitle, style: titleStyle),
+            SizedBox(height: SizeConfig.widgetListHeightPadding),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                InfoHyperlink(
+                  text: "About Me",
+                  onPressed: _goToAboutMePage,
+                ),
+                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                InfoHyperlink(
+                  text: "Portfolio",
+                  onPressed: _goToPortfolioPage,
+                ),
+                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                InfoHyperlink(
+                  text: "Blog",
+                  onPressed: _goToBlogPage,
+                ),
+              ],
+            ),
+            SizedBox(height: SizeConfig.widgetListHeightPadding),
             const Text(PersonalInfoConstants.myPhoneNumber, style: infoStyle),
             const Text(PersonalInfoConstants.myEmail, style: infoStyle),
             SizedBox(height: SizeConfig.widgetListHeightPadding),
