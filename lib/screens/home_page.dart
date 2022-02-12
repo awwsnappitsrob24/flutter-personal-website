@@ -27,7 +27,6 @@ class HomePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 100.0,
-              backgroundColor: Colors.red,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(100.0),
                 child: Image.asset("assets/images/profile_picture.jpg",
