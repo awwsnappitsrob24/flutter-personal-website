@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SocialMediaButton extends StatelessWidget {
   final Color backgroundColor;
-  final Icon icon;
+  final FaIcon icon;
   final String redirectUrl;
   const SocialMediaButton(
       {Key? key,
@@ -11,8 +13,8 @@ class SocialMediaButton extends StatelessWidget {
       required this.redirectUrl})
       : super(key: key);
 
-  void _redirect() {
-    print("redirect to url: $redirectUrl");
+  void _redirect() async {
+    if (!await launch(redirectUrl)) throw 'Could not launch $redirectUrl';
   }
 
   @override

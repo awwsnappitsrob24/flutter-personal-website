@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_personal_website/utils/colors.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_personal_website/utils/constants.dart';
 import 'package:flutter_personal_website/utils/size_config.dart';
 import 'package:flutter_personal_website/widgets/social_media_button.dart';
@@ -33,15 +35,42 @@ class HomePage extends StatelessWidget {
               ),
             ),
             SizedBox(height: SizeConfig.widgetListHeightPadding),
-            const Text(Constants.myName, style: nameStyle),
-            const Text(Constants.myTitle, style: titleStyle),
-            const Text(Constants.myPhoneNumber, style: infoStyle),
-            const Text(Constants.myEmail, style: infoStyle),
+            const Text(PersonalInfoConstants.myName, style: nameStyle),
+            const Text(PersonalInfoConstants.myTitle, style: titleStyle),
+            const Text(PersonalInfoConstants.myPhoneNumber, style: infoStyle),
+            const Text(PersonalInfoConstants.myEmail, style: infoStyle),
             SizedBox(height: SizeConfig.widgetListHeightPadding),
-            const SocialMediaButton(
-              backgroundColor: Colors.blue,
-              icon: Icon(Icons.facebook_outlined),
-              redirectUrl: Constants.facebookProfileUrl,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SocialMediaButton(
+                  backgroundColor:
+                      HexColor.fromHex(ColorConstants.facebookHexColor),
+                  icon: const FaIcon(FontAwesomeIcons.facebook),
+                  redirectUrl: PersonalInfoConstants.facebookProfileUrl,
+                ),
+                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SocialMediaButton(
+                  backgroundColor:
+                      HexColor.fromHex(ColorConstants.githubHexColor),
+                  icon: const FaIcon(FontAwesomeIcons.github),
+                  redirectUrl: PersonalInfoConstants.githubUrl,
+                ),
+                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SocialMediaButton(
+                  backgroundColor:
+                      HexColor.fromHex(ColorConstants.linkedinHexColor),
+                  icon: const FaIcon(FontAwesomeIcons.linkedin),
+                  redirectUrl: PersonalInfoConstants.linkedinUrl,
+                ),
+                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SocialMediaButton(
+                  backgroundColor:
+                      HexColor.fromHex(ColorConstants.twitterHexColor),
+                  icon: const FaIcon(FontAwesomeIcons.twitter),
+                  redirectUrl: PersonalInfoConstants.twitterUrl,
+                ),
+              ],
             ),
           ],
         ),
