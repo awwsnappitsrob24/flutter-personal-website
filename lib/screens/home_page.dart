@@ -3,11 +3,11 @@ import 'package:flutter_personal_website/screens/about_me_page.dart';
 import 'package:flutter_personal_website/screens/blog_page.dart';
 import 'package:flutter_personal_website/screens/portfolio_page.dart';
 import 'package:flutter_personal_website/utils/colors.dart';
-import 'package:flutter_personal_website/widgets/info_hyperlink.dart';
+import 'package:flutter_personal_website/widgets/home_page_widgets/info_hyperlink.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_personal_website/utils/constants.dart';
 import 'package:flutter_personal_website/utils/size_config.dart';
-import 'package:flutter_personal_website/widgets/social_media_button.dart';
+import 'package:flutter_personal_website/widgets/home_page_widgets/social_media_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
