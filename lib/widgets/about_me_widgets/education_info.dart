@@ -15,7 +15,11 @@ class EducationInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               Text(
-                  "California State University Long Beach was my academic home for approximately 7 years. I graduated with a Bachelor of Science in Computer Science in May 2016. I compiled a 3.22 GPA and made it to the Dean's List twice. I acknowledge that my GPA isn't anything special. However, I earned every inch of that GPA. My relevant coursework include: Mobile Application Development, Intro to Software Engineering, Data Structures and Algorithms, Database Fundamentals, and a Senior Project Course.\n"),
+                'Education',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                  "\nCalifornia State University Long Beach was my academic home for approximately 7 years. I graduated with a Bachelor of Science in Computer Science in May 2016. I compiled a 3.22 GPA and made it to the Dean's List twice. I acknowledge that my GPA isn't anything special. However, I earned every inch of that GPA. My relevant coursework include: Mobile Application Development, Intro to Software Engineering, Data Structures and Algorithms, Database Fundamentals, and a Senior Project Course.\n"),
               Text(
                   "I graduated with a Master's Degree in Computer Science with concentration in Software Development. I graduated on May 2020 with a 3.3 GPA. My relevant coursework include: Advanced Topics in Programming Languages, Advanced Data Structures and Algorithms, Advanced Software Engineering, Requirements Engineering, Software Testing and Verification, and Software Architecture.\n"),
             ],
