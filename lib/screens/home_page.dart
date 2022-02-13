@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_personal_website/screens/about_me_page.dart';
+import 'package:flutter_personal_website/screens/blog_page.dart';
+import 'package:flutter_personal_website/screens/portfolio_page.dart';
 import 'package:flutter_personal_website/utils/colors.dart';
 import 'package:flutter_personal_website/widgets/info_hyperlink.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -15,16 +18,28 @@ class HomePage extends StatelessWidget {
   static const TextStyle infoStyle =
       TextStyle(fontSize: 16, fontWeight: FontWeight.bold);
 
-  void _goToAboutMePage() {
-    print('about me');
+  void _goToAboutMePage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const AboutMePage(),
+        ));
   }
 
-  void _goToPortfolioPage() {
-    print('portflio');
+  void _goToPortfolioPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const PortfolioPage(),
+        ));
   }
 
-  void _goToBlogPage() {
-    print('blog');
+  void _goToBlogPage(BuildContext context) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const BlogPage(),
+        ));
   }
 
   @override
@@ -53,11 +68,20 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                InfoHyperlink(text: "About Me", onPressed: _goToAboutMePage),
+                InfoHyperlink(
+                  text: "About Me",
+                  onPressed: () => _goToAboutMePage(context),
+                ),
                 SizedBox(width: SizeConfig.screenWidth! / 40),
-                InfoHyperlink(text: "Portfolio", onPressed: _goToPortfolioPage),
+                InfoHyperlink(
+                  text: "Portfolio",
+                  onPressed: () => _goToPortfolioPage(context),
+                ),
                 SizedBox(width: SizeConfig.screenWidth! / 40),
-                InfoHyperlink(text: "Blog", onPressed: _goToBlogPage),
+                InfoHyperlink(
+                  text: "Blog",
+                  onPressed: () => _goToBlogPage(context),
+                ),
               ],
             ),
             SizedBox(height: SizeConfig.screenHeight! / 40),
