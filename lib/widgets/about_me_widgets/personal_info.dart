@@ -16,6 +16,7 @@ class PersonalInfo extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 100.0,
+              backgroundColor: Colors.transparent,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(100.0),
                 child: Image.asset("assets/images/about_me_pic.jpg",

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_personal_website/utils/size_config.dart';
+import 'package:flutter_personal_website/widgets/about_me_widgets/education_info.dart';
 import 'package:flutter_personal_website/widgets/about_me_widgets/personal_info.dart';
 
 class AboutMePage extends StatelessWidget {
@@ -16,6 +17,8 @@ class AboutMePage extends StatelessWidget {
             children: [
               SizedBox(height: SizeConfig.screenHeight! / 40),
               const PersonalInfo(),
+              SizedBox(height: SizeConfig.screenHeight! / 40),
+              const EducationInfo(),
             ],
           ),
         ),
