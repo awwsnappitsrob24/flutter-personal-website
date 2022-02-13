@@ -6,11 +6,13 @@ class SocialMediaButton extends StatelessWidget {
   final Color backgroundColor;
   final FaIcon icon;
   final String redirectUrl;
+  final String heroTag;
   const SocialMediaButton(
       {Key? key,
       required this.backgroundColor,
       required this.icon,
-      required this.redirectUrl})
+      required this.redirectUrl,
+      required this.heroTag})
       : super(key: key);
 
   void _redirect() async {
@@ -20,6 +22,7 @@ class SocialMediaButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
+      heroTag: heroTag,
       child: icon,
       backgroundColor: backgroundColor,
       onPressed: () => _redirect(),

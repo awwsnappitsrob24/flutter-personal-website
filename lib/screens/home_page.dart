@@ -96,6 +96,7 @@ class HomePage extends StatelessWidget {
                       HexColor.fromHex(ColorConstants.facebookHexColor),
                   icon: const FaIcon(FontAwesomeIcons.facebook),
                   redirectUrl: PersonalInfoConstants.facebookProfileUrl,
+                  heroTag: HeroTagConstants.facebookHeroTag,
                 ),
                 SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
@@ -103,6 +104,7 @@ class HomePage extends StatelessWidget {
                       HexColor.fromHex(ColorConstants.githubHexColor),
                   icon: const FaIcon(FontAwesomeIcons.github),
                   redirectUrl: PersonalInfoConstants.githubUrl,
+                  heroTag: HeroTagConstants.githubHeroTag,
                 ),
                 SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
@@ -110,6 +112,7 @@ class HomePage extends StatelessWidget {
                       HexColor.fromHex(ColorConstants.linkedinHexColor),
                   icon: const FaIcon(FontAwesomeIcons.linkedin),
                   redirectUrl: PersonalInfoConstants.linkedinUrl,
+                  heroTag: HeroTagConstants.linkedinHeroTag,
                 ),
                 SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
@@ -117,6 +120,7 @@ class HomePage extends StatelessWidget {
                       HexColor.fromHex(ColorConstants.twitterHexColor),
                   icon: const FaIcon(FontAwesomeIcons.twitter),
                   redirectUrl: PersonalInfoConstants.twitterUrl,
+                  heroTag: HeroTagConstants.twitterHeroTag,
                 ),
               ],
             ),

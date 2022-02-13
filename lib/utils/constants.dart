@@ -17,3 +17,10 @@ class ColorConstants {
   static const String linkedinHexColor = "#2867B2";
   static const String twitterHexColor = "#1DA1F2";
 }
+
+class HeroTagConstants {
+  static const String facebookHeroTag = "fbHerotag";
+  static const String githubHeroTag = "githubHeroTag";
+  static const String linkedinHeroTag = "linkedinHeroTag";
+  static const String twitterHeroTag = "twitterHeroTag";
+}
