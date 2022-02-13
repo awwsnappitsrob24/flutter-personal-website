@@ -46,10 +46,10 @@ class HomePage extends StatelessWidget {
                     fit: BoxFit.cover),
               ),
             ),
-            SizedBox(height: SizeConfig.widgetListHeightPadding),
+            SizedBox(height: SizeConfig.screenHeight! / 40),
             const Text(PersonalInfoConstants.myName, style: nameStyle),
             const Text(PersonalInfoConstants.myTitle, style: titleStyle),
-            SizedBox(height: SizeConfig.widgetListHeightPadding),
+            SizedBox(height: SizeConfig.screenHeight! / 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -57,22 +57,22 @@ class HomePage extends StatelessWidget {
                   text: "About Me",
                   onPressed: _goToAboutMePage,
                 ),
-                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SizedBox(width: SizeConfig.screenWidth! / 40),
                 InfoHyperlink(
                   text: "Portfolio",
                   onPressed: _goToPortfolioPage,
                 ),
-                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SizedBox(width: SizeConfig.screenWidth! / 40),
                 InfoHyperlink(
                   text: "Blog",
                   onPressed: _goToBlogPage,
                 ),
               ],
             ),
-            SizedBox(height: SizeConfig.widgetListHeightPadding),
+            SizedBox(height: SizeConfig.screenHeight! / 40),
             const Text(PersonalInfoConstants.myPhoneNumber, style: infoStyle),
             const Text(PersonalInfoConstants.myEmail, style: infoStyle),
-            SizedBox(height: SizeConfig.widgetListHeightPadding),
+            SizedBox(height: SizeConfig.screenHeight! / 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -82,21 +82,21 @@ class HomePage extends StatelessWidget {
                   icon: const FaIcon(FontAwesomeIcons.facebook),
                   redirectUrl: PersonalInfoConstants.facebookProfileUrl,
                 ),
-                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
                   backgroundColor:
                       HexColor.fromHex(ColorConstants.githubHexColor),
                   icon: const FaIcon(FontAwesomeIcons.github),
                   redirectUrl: PersonalInfoConstants.githubUrl,
                 ),
-                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
                   backgroundColor:
                       HexColor.fromHex(ColorConstants.linkedinHexColor),
                   icon: const FaIcon(FontAwesomeIcons.linkedin),
                   redirectUrl: PersonalInfoConstants.linkedinUrl,
                 ),
-                SizedBox(width: SizeConfig.widgetListWidthPadding),
+                SizedBox(width: SizeConfig.screenWidth! / 50),
                 SocialMediaButton(
                   backgroundColor:
                       HexColor.fromHex(ColorConstants.twitterHexColor),

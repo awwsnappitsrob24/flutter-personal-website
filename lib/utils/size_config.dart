@@ -4,9 +4,6 @@ class SizeConfig {
   static MediaQueryData? _mediaQueryData;
   static double? screenWidth;
   static double? screenHeight;
-  static double? widgetListHeightPadding;
-  static double? widgetListWidthPadding;
-
   static double? blockSizeHorizontal;
   static double? blockSizeVertical;
 
@@ -19,8 +16,6 @@ class SizeConfig {
     _mediaQueryData = MediaQuery.of(context);
     screenWidth = _mediaQueryData!.size.width;
     screenHeight = _mediaQueryData!.size.height;
-    widgetListHeightPadding = screenHeight! / 40;
-    widgetListWidthPadding = screenWidth! / 40;
     blockSizeHorizontal = screenWidth! / 100;
     blockSizeVertical = screenHeight! / 100;
 
