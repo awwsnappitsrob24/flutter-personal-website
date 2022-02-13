@@ -53,20 +53,11 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                InfoHyperlink(
-                  text: "About Me",
-                  onPressed: _goToAboutMePage,
-                ),
+                InfoHyperlink(text: "About Me", onPressed: _goToAboutMePage),
                 SizedBox(width: SizeConfig.screenWidth! / 40),
-                InfoHyperlink(
-                  text: "Portfolio",
-                  onPressed: _goToPortfolioPage,
-                ),
+                InfoHyperlink(text: "Portfolio", onPressed: _goToPortfolioPage),
                 SizedBox(width: SizeConfig.screenWidth! / 40),
-                InfoHyperlink(
-                  text: "Blog",
-                  onPressed: _goToBlogPage,
-                ),
+                InfoHyperlink(text: "Blog", onPressed: _goToBlogPage),
               ],
             ),
             SizedBox(height: SizeConfig.screenHeight! / 40),
